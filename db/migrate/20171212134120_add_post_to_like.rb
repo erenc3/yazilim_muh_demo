@@ -1,4 +1,4 @@
-class AddPostToLike < ActiveRecord::Migration[5.1]
+class AddPostToLike < ActiveRecord::Migration
   def change
     add_reference :likes, :post, foreign_key: true
   end
